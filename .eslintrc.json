@@ -1,0 +1,59 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "plugins": ["react", "import", "jsx-a11y"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0,
+    "no-unused-vars": "warn",
+    "no-unused-expressions": "warn",
+    "no-constant-condition": "warn",
+    "no-shadow": "warn",
+    "no-undef": "warn",
+    "no-use-before-define": "warn",
+    "no-duplicate-imports": "warn",
+    "consistent-return": "warn",
+    "eqeqeq": "warn",
+    "object-curly-spacing": ["warn", "always"],
+    "no-implicit-coercion": "warn",
+    "no-unneeded-ternary": "warn",
+    "no-var": "warn",
+    "no-unreachable": "warn",
+    "no-unreachable-loop": "warn",
+    "no-useless-return": "warn",
+    "no-useless-constructor": "warn",
+    "no-return-assign": ["warn", "always"],
+    "no-lonely-if": "warn",
+    "no-invalid-this": "warn",
+    "camelcase": "warn",
+    "no-unmodified-loop-condition": "warn"
+  }
+}
